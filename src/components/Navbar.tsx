@@ -7,7 +7,7 @@ import { useSearchParams } from "next/navigation";
 const Navbar=()=>{
     const searchParams = useSearchParams();    
     const todosFilter = searchParams.get('todos');
-    
+
     return (
         <nav>
             <Link href="/" className={todosFilter===null?'active':""}>All</Link>
